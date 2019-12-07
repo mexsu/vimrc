@@ -1,0 +1,2 @@
+# vimrcFile
+vimrc and colorscheme 
