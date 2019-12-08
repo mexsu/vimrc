@@ -2,7 +2,7 @@
 #### .vimrc file with kuroiblack colorscheme
 
 Basic .vimrc file i put together from different places
-you can use it alone or with the colorscheme kuroiblack 
+you can use it alone or with the colorscheme kuroiblack
 that included in this repository
 
 ## Installation
@@ -12,7 +12,7 @@ that included in this repository
  	```bash
    	~/.vimrc
    	```
-   
+
 2.  Copy colors/kuroiblack.vim to:
 
     ```bash
@@ -31,7 +31,7 @@ that included in this repository
  ```vim
  colorscheme kuroiblack
  ```
- 
+
 ## Credits
 This colorscheme is originally based on
 [kuroi.vim](https://github.com/aonemd/kuroi.vim). I only changed the background
