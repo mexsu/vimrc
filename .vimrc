@@ -8,11 +8,11 @@ set textwidth=125   " Line wrap (number of cols)
 set showmatch	" Highlight matching brace
 set encoding=utf-8
 set wildmode=longest,list,full
-set belloff=all " Disable bell 
+set belloff=all " Disable bell
 "set visualbell	" Use visual bell (no beeping)
 "set cursorline "hightlight the line ,add line under line
-set showcmd "show commands 
-syntax on 
+set showcmd "show commands
+syntax on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Add the status bar
@@ -36,7 +36,7 @@ function! ModifiedColor()
     set statusline+=%{&ff}] "file format
     set statusline+=%y      "filetype
     set statusline+=%h      "help file flag
-    set statusline+=[%{getbufvar(bufnr('%'),'&mod')?'modified':'saved'}]      
+    set statusline+=[%{getbufvar(bufnr('%'),'&mod')?'modified':'saved'}]
     "modified flag
 
     set statusline+=%r      "read only flag
@@ -47,13 +47,13 @@ function! ModifiedColor()
     set statusline+=\ Buf:%n                    " Buffer number
     set statusline+=\ [%b][0x%B]\               " ASCII and byte code under cursor
 """""""""""""""""""""""""""""""""""""End"Status"Bar""""""""""""""""""""""""""""""""""""""""""""""""
- 
+
 " Searching
 set hlsearch 	" Highlight all search results
 set smartcase	" Enable smart-case search
 set ignorecase	" Always case-insensitive
 set incsearch	" Searches for strings incrementally
-  
+
 set autoindent    " Auto-indent new lines
 set cindent       " Use 'C' style program indenting
 set shiftwidth=4  " Number of auto-indent spaces
@@ -62,11 +62,11 @@ set smarttab	  " Enable smart-tabs
 set softtabstop=4 " Number of spaces per Tab
 
 set ruler	" Show row and column ruler information
-    
+
 set undolevels=1000	" Number of undo levels
 set backspace=indent,eol,start  " Backspace behaviour
 
-" Move between lines and wrapped-broken lines 
+" Move between lines and wrapped-broken lines
 noremap <silent> k gk
 noremap <silent> j gj
 
@@ -89,9 +89,9 @@ if $TERM == "xterm-256color"
 endif
 
 set termguicolors " To use the true color mode
-set background=dark "dark/light"Setting this option does not change the background color, it tells Vim what the background color looks like"
+set background=dark "dark/light" Setting this option does not change the background color, it tells Vim what the background color looks like"
 " put https://raw.github.com/mexsu/vimrcFile/master/colors/kuroiblack.vim
 " in ~/.vim/colors/
-" to make colorscheme work or comment it to disable colorscheme
+" to make colorscheme work or comment it the line below to disable colorscheme
 colorscheme kuroiblack
 " to change the background color go to ~/.vim/colors/kuroiblack.vim - and change let s:gui_background = "#0f0f0f" this value
