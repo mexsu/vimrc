@@ -96,7 +96,7 @@ set background=dark "dark/light"
 
 " put https://raw.github.com/mexsu/vimrcFile/master/colors/kuroiblack.vim
 " in ~/.vim/colors/
-" To make colorscheme work or comment it the line below to disable colorscheme
+" To make colorscheme work. or comment the line below to disable colorscheme
 colorscheme kuroiblack
 
 " To change the background color go to:
