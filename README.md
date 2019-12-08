@@ -25,11 +25,11 @@ that included in this repository
     [Vundle](https://github.com/gmarik/Vundle.vim), or
     [Pathogen](https://github.com/tpope/vim-pathogen).
 
- #####  You can use only the .vimrc file by commenting or deleting out the colorscheme kuroiblack line from your .vimrc
+ #####  You can use the .vimrc file alone by commenting or deleting out the colorscheme kuroiblack line from your .vimrc
  you can find it at the end of the file
 
  ```vim
- colorscheme kuroiblack
+ "colorscheme kuroiblack
  ```
 
 ## Credits
