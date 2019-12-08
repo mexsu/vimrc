@@ -88,10 +88,16 @@ if $TERM == "xterm-256color"
   set t_Co=256
 endif
 
-set termguicolors " To use the true color mode
-set background=dark "dark/light" Setting this option does not change the background color, it tells Vim what the background color looks like"
+" To use the true color mode
+set termguicolors
+
+" Setting this option does not change the background color, it tells Vim what the background color looks like
+set background=dark "dark/light"
+
 " put https://raw.github.com/mexsu/vimrcFile/master/colors/kuroiblack.vim
 " in ~/.vim/colors/
-" to make colorscheme work or comment it the line below to disable colorscheme
+" To make colorscheme work or comment it the line below to disable colorscheme
 colorscheme kuroiblack
-" to change the background color go to ~/.vim/colors/kuroiblack.vim - and change let s:gui_background = "#0f0f0f" this value
+
+" To change the background color go to:
+" ~/.vim/colors/kuroiblack.vim - and change let s:gui_background = "#0f0f0f" this value
