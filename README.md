@@ -9,9 +9,9 @@ that included in this repository
 
 1.  copy .vimrc to your home directory:
 
- 	```bash
-   	~/.vimrc
-   	```
+	```bash
+	~/.vimrc
+	```
 
 2.  Copy colors/kuroiblack.vim to:
 
