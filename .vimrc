@@ -1,18 +1,26 @@
 " General
-set nocompatible " Don't try to be vi compatible
-set number relativenumber
-"set number  " Show normal line numbers
-set linebreak	" Break lines at word (requires Wrap lines)
-set showbreak=++   " Wrap-broken line prefix
-set textwidth=125   " Line wrap (number of cols)
-set showmatch	" Highlight matching brace
+set nocompatible 	" Don't try to be vi compatible
 set encoding=utf-8
-set wildmode=longest,list,full
-set belloff=all " Disable bell
-"set visualbell	" Use visual bell (no beeping)
-"set cursorline "hightlight the line ,add line under line
-set showcmd "show commands
+set showcmd		" Show commands
+set cursorline		" Highlight line you are on
 syntax on
+
+set number		" Show normal line numbers
+set relativenumber	" Show numbers relative to line you are on
+
+set linebreak		" Break lines at word (requires Wrap lines)
+set showbreak=++	" Wrap-broken line prefix
+set textwidth=125	" Line wrap (number of cols)
+set wildmode=longest,list,full
+
+set belloff=all		" Disable bell
+"set visualbell		" Use visual bell (no beeping)
+
+set ruler		" Show row and column ruler information
+set undolevels=1000	" Number of undo lejvels
+set backspace=indent,eol,start	" Backspace behaviour
+
+"set mouse=a	" Enable mouse
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Add the status bar
@@ -50,21 +58,19 @@ function! ModifiedColor()
 
 " Searching
 set hlsearch 	" Highlight all search results
-set smartcase	" Enable smart-case search
-set ignorecase	" Always case-insensitive
 set incsearch	" Searches for strings incrementally
+set ignorecase	" Always case-insensitive
+set smartcase	" Enable smart-case search
+set showmatch	" Highlight matching brace
 
+" Indent
 set autoindent    " Auto-indent new lines
-set cindent       " Use 'C' style program indenting
-set shiftwidth=4  " Number of auto-indent spaces
 set smartindent   " Enable smart-indent
-set smarttab	  " Enable smart-tabs
-set softtabstop=4 " Number of spaces per Tab
+set shiftwidth=4  " Number of auto-indent spaces
 
-set ruler	" Show row and column ruler information
-
-set undolevels=1000	" Number of undo levels
-set backspace=indent,eol,start  " Backspace behaviour
+" Visualize tab end of line
+set list
+set listchars=tab:›\ ,extends:>,precedes:<,eol:¬
 
 " Move between lines and wrapped-broken lines
 noremap <silent> k gk
@@ -83,10 +89,12 @@ set splitright
 " Clear seach highlight with enter after searching , n-search next , N-go to previous
 nnoremap <CR> :noh<CR><CR>
 
+" Move line up or down with arrow keys
+nnoremap <up> ddkP
+nnoremap <down> ddp
+
 " To use the colorscheme in a 256-color terminal
-if $TERM == "xterm-256color"
-  set t_Co=256
-endif
+ set t_Co=256
 
 " To use the true color mode
 set termguicolors
