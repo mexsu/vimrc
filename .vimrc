@@ -2,7 +2,7 @@
 set nocompatible 	" Don't try to be vi compatible
 set encoding=utf-8
 set showcmd		" Show commands
-set cursorline		" Highlight line you are on
+"set cursorline		" Highlight line you are on
 syntax on
 
 set number		" Show normal line numbers
@@ -17,7 +17,7 @@ set belloff=all		" Disable bell
 "set visualbell		" Use visual bell (no beeping)
 
 set ruler		" Show row and column ruler information
-set undolevels=1000	" Number of undo lejvels
+set undolevels=1000	" Number of undo levels
 set backspace=indent,eol,start	" Backspace behaviour
 
 "set mouse=a	" Enable mouse
@@ -73,25 +73,28 @@ set list
 set listchars=tab:›\ ,extends:>,precedes:<,eol:¬
 
 " Move between lines and wrapped-broken lines
-noremap <silent> k gk
-noremap <silent> j gj
+noremap k gk
+noremap j gj
 
-" Change shortcut from ctrl w + hjkl to ctrl hjkl
+" Change shortcut from Ctrl+w+hjkl to Ctrl+hjkl
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
-" Make splits to open at the botton and the right
+" Make splits to open at the bottom and the right
 set splitbelow
 set splitright
 
-" Clear seach highlight with enter after searching , n-search next , N-go to previous
+" Clear search highlight with Enter after searching,n-search next,N-go to previous
 nnoremap <CR> :noh<CR><CR>
 
-" Move line up or down with arrow keys
+" Move line up or down with arrow keys in normal mode
 nnoremap <up> ddkP
 nnoremap <down> ddp
+
+" Spell-check set to F6
+nnoremap <F6> :setlocal spell! spelllang=en_us<CR>
 
 " To use the colorscheme in a 256-color terminal
  set t_Co=256
@@ -102,9 +105,9 @@ set termguicolors
 " Setting this option does not change the background color, it tells Vim what the background color looks like
 set background=dark "dark/light"
 
-" put https://raw.github.com/mexsu/vimrcFile/master/colors/kuroiblack.vim
+" Put https://raw.github.com/mexsu/vimrcFile/master/colors/kuroiblack.vim
 " in ~/.vim/colors/
-" To make colorscheme work. or comment the line below to disable colorscheme
+" To make colorscheme work, or comment the line below to disable colorscheme
 colorscheme kuroiblack
 
 " To change the background color go to:
