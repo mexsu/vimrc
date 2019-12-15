@@ -72,6 +72,12 @@ set shiftwidth=4  " Number of auto-indent spaces
 set list
 set listchars=tab:›\ ,extends:>,precedes:<,eol:¬
 
+" Unbind Q (it used to take you into Ex mode)
+nnoremap Q <nop>
+
+" Unbind Shift+K, it's previously used for opening manual or help or something
+map <S-k> <Nop>
+
 " Move between lines and wrapped-broken lines
 noremap k gk
 noremap j gj
