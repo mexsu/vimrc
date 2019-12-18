@@ -4,6 +4,7 @@
 Basic .vimrc file i put together from different places
 you can use it alone or with the colorscheme kuroiblack
 that included in this repository
+
 I use it most the time for terminal, like putty or git bash for windows
 
 ## Installation
