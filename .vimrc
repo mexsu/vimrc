@@ -20,8 +20,8 @@ set ruler		" Show row and column ruler information
 set undolevels=1000	" Number of undo levels
 set backspace=indent,eol,start	" Backspace behaviour
 
-set mouse=a		" Enable mouse
-
+"set mouse=a		" Enable mouse
+"set noswapfile		" disable swap file
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Add the status bar
 set laststatus=2            " set the bottom status bar
@@ -103,7 +103,7 @@ nnoremap <down> ddp
 nnoremap <F6> :setlocal spell! spelllang=en_us<CR>
 
 " To use the colorscheme in a 256-color terminal
- set t_Co=256
+set t_Co=256
 
 " To use the true color mode
 set termguicolors
