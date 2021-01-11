@@ -33,7 +33,12 @@ I use it most the time for terminal, like putty or git bash for windows.
  ```vim
  "colorscheme kuroiblack
  ```
-
+ Enable/disbale mouse by commenting/uncomment this line in .vimrc
+ disabling mouse will help copy/paste in putty using mouse
+ ```vim
+ set mouse=a		" Enable mouse
+ ```
+ 
 ## Credits
 This colorscheme is originally based on
 [kuroi.vim](https://github.com/aonemd/kuroi.vim). I only changed the background
