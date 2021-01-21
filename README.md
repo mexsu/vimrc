@@ -5,10 +5,14 @@ Basic .vimrc file i put together from different places with gruvbox colorscheme,
 I use it mostly in terminal like Putty or git bash for windows.
 
 ## Installation
-copy .vimrc to your home directory:
+```bash
+curl -OL https://raw.githubusercontent.com/mexsu/vimrcFile/master/.vimrc
+```
+move .vimrc to your home directory:
 ```bash
 ~/.vimrc
 ```
+
 ##### Things to do:
 * Install vim-plug:
    ```bash

@@ -1,4 +1,4 @@
-"Things to do:
+" Things to do:
 " *Install vim-plug:
 "   curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 " *Enable/Disbale mouse
@@ -17,7 +17,7 @@ set clipboard+=unnamedplus
 
 let mapleader =","	" map <leader>
 
-"install vim-plug from https://github.com/junegunn/vim-plug
+" Install vim-plug from https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'preservim/nerdtree'
@@ -129,7 +129,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
         let NERDTreeBookmarksFile = '~/.vim' . '/NERDTreeBookmarks'
     endif
 
-"netrw
+" Netrw
 filetype plugin on	"built in plugin(for netrw)
 " Tweaks for browsing
 let g:netrw_banner=0		" disable banner
