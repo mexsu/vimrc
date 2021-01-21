@@ -2,9 +2,9 @@
 " *Install vim-plug:
 "   curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 " *Enable/Disbale mouse
-" *Change theme background color
+" *Change background color theme
 
-""" General
+" General
 set nocompatible 	" Don't try to be vi compatible
 set title		"name of the file as title
 syntax on		"enable syntax
