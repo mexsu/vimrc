@@ -95,6 +95,9 @@ autocmd BufWritePre * %s/\s\+$//e
 autocmd BufWritePre * %s/\n\+\%$//e
 autocmd BufWritePre *.[ch] %s/\%$/\r/e
 
+" Indent all file
+noremap <leader>l gg=G
+
 " To use the colorscheme in a 256-color terminal
 set t_Co=256
 
