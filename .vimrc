@@ -1,6 +1,8 @@
 " Things to do:
 " *Install vim-plug:
 "   curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" *Install plugins:
+"   Reload .vimrc and :PlugInstall to install plugins.
 " *Enable/Disbale mouse
 " *Change background color theme
 
