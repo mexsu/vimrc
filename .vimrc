@@ -4,6 +4,7 @@
 " *Install plugins:
 "   Reload .vimrc and :PlugInstall to install plugins.
 " *Enable/Disbale mouse
+" *Enable/Disbale swapfile
 " *Change background color theme
 
 " General
