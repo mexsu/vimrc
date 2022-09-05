@@ -18,6 +18,8 @@ move .vimrc to your home directory:
    ```bash
    curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
    ```
+* Move autoload folder to vimfiles for windows gvim
+
 * Reload .vimrc and run :PlugInstall to install plugins.
 
 *  Enable/Disable mouse, disabling mouse will help copy/paste in putty using mouse
