@@ -1,4 +1,4 @@
-# vimrcFile
+# vimrc file
 #### .vimrc file with gruvbox colorscheme
 
 Basic .vimrc file i put together from different places with gruvbox colorscheme,
@@ -6,7 +6,7 @@ I use it mostly in terminal like Putty or git bash for windows.
 
 ## Installation
 ```bash
-curl -OL https://raw.githubusercontent.com/mexsu/vimrcFile/master/.vimrc
+curl -OL https://raw.githubusercontent.com/mexsu/vimrc/master/.vimrc
 ```
 move .vimrc to your home directory:
 ```bash
