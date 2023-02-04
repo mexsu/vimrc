@@ -16,7 +16,7 @@ set showcmd		" Show commands
 set mouse=a		" Enable mouse
 set clipboard+=unnamedplus
 set noswapfile		" disable swap file
-"set cursorline		" Highlight line you are on
+set cursorline		" Highlight line you are on
 
 let mapleader =","	" map <leader>
 
