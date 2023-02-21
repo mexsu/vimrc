@@ -17,16 +17,19 @@ set mouse=a		" Enable mouse
 set clipboard+=unnamedplus
 set noswapfile		" disable swap file
 set cursorline		" Highlight line you are on
+set showtabline=2
 
 let mapleader =","	" map <leader>
 
 " Install vim-plug from https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
-Plug 'morhetz/gruvbox'
+"Plug 'morhetz/gruvbox'
+Plug 'tomasr/molokai'
 Plug 'preservim/nerdtree'
+Plug 'vim-scripts/AutoComplPop'
 "Plug 'chriskempson/base16-vim'
-"Plug 'vim-airline/vim-airline'
-"Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end() " :PlugInstall
 
 set number		" Show normal line numbers
@@ -114,7 +117,8 @@ set termguicolors
 set background=dark "dark/light"
 
 " To make colorscheme work, or comment the line below to disable colorscheme
-colorscheme gruvbox
+colorscheme molokai
+"colorscheme gruvbox
 " To change the background color go to:
 " ~/.vim/plugged/gruvbox/colors/gruvbox.vim - change let s:gb.dark0 = "#00000f" this value
 
