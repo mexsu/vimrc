@@ -10,7 +10,7 @@ curl -OL https://raw.githubusercontent.com/mexsu/vimrc/master/.vimrc
 ```
 move .vimrc to your home directory:
 ```bash
-~/.vimrc
+mv .vimrc ~/.vimrc
 ```
 
 ##### Things to do:
